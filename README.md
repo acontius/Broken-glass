@@ -22,14 +22,10 @@ Now you just have to gimme the number of parts and the size of theme:
         example:
             You can make a Square in 4 Ways
 
-
-If you are Running the program in vscode:
-    in the top right corner press the RUN button and then select Run As Python file.
-
-else if you are running on the pycharm :
-    in the top right corner pressing the RUN button is enough.
+POV : 
+        ma first exerise using dp(memoization)
 
 
 The exercise is here :
     [text](https://quera.org/problemset/218360?tab=description)
-    so give it a try and tell me ma probs
+    so give it a try 

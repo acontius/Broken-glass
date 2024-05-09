@@ -1,4 +1,17 @@
-    for i in range(n):
+def count_arrangements(n, pieces):
+    memo = {}
+    return count_arrangements_recursive(n, pieces, 0, 0, 0, memo)
+
+
+def count_arrangements_recursive(n, pieces, width_sum, height_sum, mask, memo):
+    if mask == (1 << n) - 1:
+        return 1
+
+    if (mask, width_sum, height_sum) in memo:
+        return memo[(mask, width_sum, height_sum)]
+
+    total_arrangements = 0
+for i in range(n):
         if (mask & (1 << i)) == 0:
             new_width_sum = max(width_sum, pieces[i][0])
             new_height_sum = max(height_sum, pieces[i][1])
